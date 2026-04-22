@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriLoop - Nông Nghiệp Tuần Hoàn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .sdg-card:hover { transform: translateY(-5px); transition: 0.3s; }
+        
+        /* Màu SDG chuẩn theo yêu cầu */
+        .sdg-2 { background-color: #DDA01E; }
+        .sdg-7 { background-color: #FBC412; }
+        .sdg-8 { background-color: #A31C44; }
+        .sdg-9 { background-color: #F26A2E; }
+        .sdg-12 { background-color: #BF8D2C; }
+        .sdg-13 { background-color: #3F7E44; }
+        .sdg-17 { background-color: #19486A; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="fixed w-full z-50 px-6 py-4 flex justify-between items-center glass mt-4 mx-auto max-w-7xl left-0 right-0 rounded-2xl">
+        <div class="text-2xl font-extrabold tracking-tighter text-white uppercase tracking-tighter">AGRI<span class="text-emerald-400">LOOP</span></div>
+        <div class="hidden lg:flex space-x-6 text-xs font-bold text-white/90 uppercase tracking-widest">
+            <a href="#problem" class="hover:text-emerald-400 transition">Vấn Đề</a>
+            <a href="#solution" class="hover:text-emerald-400 transition">Giải Pháp</a>
+            <a href="#tech" class="hover:text-emerald-400 transition">Công Nghệ</a>
+            <a href="#impact" class="hover:text-emerald-400 transition">Tác Động</a>
+            <a href="#team" class="hover:text-emerald-400 transition">Đội Ngũ</a>
+        </div>
+        <button class="bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2 rounded-full text-xs font-bold transition shadow-lg shadow-emerald-500/30 uppercase">
+            Khám phá ngay
+        </button>
+    </nav>
+
+    <section class="hero-bg h-screen flex items-center justify-center text-center px-6">
+        <div class="max-w-4xl">
+            <span class="inline-block px-6 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-[11px] font-black mb-6 tracking-[0.4em] uppercase">
+                AGRILOOP
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight tracking-tight">
+                Nông Nghiệp Tuần Hoàn <br> <span class="text-emerald-400 font-light italic text-4xl md:text-6xl">Kiến Tạo Giá Trị Xanh</span>
+            </h1>
+            <p class="text-xl text-white/80 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Nền tảng Logistics số kết nối trực tiếp Nông dân và Doanh nghiệp, biến phụ phẩm nông nghiệp thành tài sản dữ liệu giá trị cao.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#solution" class="bg-white text-emerald-900 px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition">Tìm hiểu giải pháp</a>
+                <a href="#impact" class="glass text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition">Giá trị ESG & SDG</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="problem" class="py-24 px-6 bg-white">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-bold text-slate-900 mb-6 italic border-l-8 border-emerald-500 pl-6 uppercase tracking-tighter">Vấn Đề Cốt Lõi</h2>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    Mỗi năm Việt Nam phát sinh khoảng 54 triệu tấn rơm rạ. Tuy nhiên, 70% trong số đó bị đốt bỏ hoặc vùi lấp, gây ra nghịch lý: 
+                    Nông dân loay hoay xử lý rác, trong khi nhà máy sinh khối thiếu nguồn cung ổn định.
+                </p>
+                <div class="grid grid-cols-2 gap-6 text-center">
+                    <div class="p-6 bg-emerald-50 rounded-2xl border border-emerald-100 shadow-sm">
+                        <div class="text-3xl font-extrabold text-emerald-600 mb-2 italic">54M+ Tấn</div>
+                        <p class="text-xs text-slate-500 font-semibold uppercase">Phát sinh mỗi năm</p>
+                    </div>
+                    <div class="p-6 bg-red-50 rounded-2xl border border-red-100 shadow-sm">
+                        <div class="text-3xl font-extrabold text-red-600 mb-2 italic">~50M Tấn</div>
+                        <p class="text-xs text-slate-500 font-semibold uppercase">Khí thải CO2/năm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-[40px] overflow-hidden shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1622383563227-04401ab4e5ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Đốt rơm rạ">
+            </div>
+        </div>
+    </section>
+
+    <section id="solution" class="py-24 px-6 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl"></div>
+        <div class="max-w-6xl mx-auto text-center relative z-10">
+            <h2 class="text-4xl font-bold mb-4 italic uppercase tracking-tight">Giải Pháp AgriLoop: Managed Marketplace</h2>
+            <p class="text-white/50 mb-16 max-w-2xl mx-auto">Kết nối minh bạch - Giám sát thông minh - Tối ưu vận hành.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-8 glass rounded-3xl group hover:bg-emerald-500 transition">
+                    <div class="text-4xl mb-6">🌾</div>
+                    <h3 class="text-xl font-bold mb-4 uppercase">Nông Dân</h3>
+                    <p class="text-sm text-white/70 group-hover:text-white">Tăng thu nhập từ phụ phẩm, tiếp cận thị trường minh bạch.</p>
+                </div>
+                <div class="p-8 glass rounded-3xl group hover:bg-emerald-500 transition">
+                    <div class="text-4xl mb-6">🏢</div>
+                    <h3 class="text-xl font-bold mb-4 uppercase">Nhà Máy</h3>
+                    <p class="text-sm text-white/70 group-hover:text-white">Đảm bảo nguồn cung ổn định, minh bạch nguồn gốc ESG.</p>
+                </div>
+                <div class="p-8 glass rounded-3xl group hover:bg-emerald-500 transition">
+                    <div class="text-4xl mb-6">🚛</div>
+                    <h3 class="text-xl font-bold mb-4 uppercase">Vận Tải</h3>
+                    <p class="text-sm text-white/70 group-hover:text-white">Tối ưu hóa xe rỗng chiều về, giảm chi phí Logistics.</p>
+                </div>
+                <div class="p-8 glass rounded-3xl group hover:bg-emerald-500 transition">
+                    <div class="text-4xl mb-6">📦</div>
+                    <h3 class="text-xl font-bold mb-4 uppercase">Đại Lý</h3>
+                    <p class="text-sm text-white/70 group-hover:text-white">Hệ thống quản lý thông minh, thu nhập theo hiệu suất.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto text-center font-bold">
+            <h2 class="text-5xl font-black text-slate-800 mb-4 tracking-tighter uppercase">SDG</h2>
+            <div class="h-1.5 w-24 bg-emerald-500 mx-auto mb-16 rounded-full"></div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+                <div class="sdg-2 p-6 rounded-lg text-white shadow-lg flex flex-col items-center justify-center aspect-square transition-transform hover:scale-105">
+                    <div class="text-2xl font-bold mb-2">2</div>
+                    <p class="text-[9px] font-bold uppercase leading-tight">Không còn<br>nạn đói</p>
+                </div>
+                <div class="sdg-7 p-6 rounded-lg text-white shadow-lg flex flex-col items-center justify-center aspect-square transition-transform hover:scale-105">
+                    <div class="text-2xl font-bold mb-2">7</div>
+                    <p class="text-[9px] font-bold uppercase leading-tight">Năng lượng sạch<br>giá hợp lý</p>
+                </div>
+                <div class="sdg-8 p-6 rounded-lg text-white shadow-lg flex flex-col items-center justify-center aspect-square transition-transform hover:scale-105">
+                    <div class="text-2xl font-bold mb-2">8</div>
+                    <p class="text-[9px] font-bold uppercase leading-tight">Công việc tốt &<br>Tăng trưởng</p>
+                </div>
+                <div class="sdg-9 p-6 rounded-lg text-white shadow-lg flex flex-col items-center justify-center aspect-square transition-transform hover:scale-105">
+                    <div class="text-2xl font-bold mb-2">9</div>
+                    <p class="text-[9px] font-bold uppercase leading-tight">Công nghiệp &<br>Hạ tầng</p>
+                </div>
+                <div class="sdg-12 p-6 rounded-lg text-white shadow-lg flex flex-col items-center justify-center aspect-square transition-transform hover:scale-105">
+                    <div class="text-2xl font-bold mb-2">12</div>
+                    <p class="text-[9px] font-bold uppercase leading-tight">Tiêu thụ &<br>Sản xuất</p>
+                </div>
+                <div class="sdg-13 p-6 rounded-lg text-white shadow-lg flex flex-col items-center justify-center aspect-square transition-transform hover:scale-105">
+                    <div class="text-2xl font-bold mb-2">13</div>
+                    <p class="text-[9px] font-bold uppercase leading-tight">Hành động về<br>khí hậu</p>
+                </div>
+                <div class="sdg-17 p-6 rounded-lg text-white shadow-lg flex flex-col items-center justify-center aspect-square transition-transform hover:scale-105">
+                    <div class="text-2xl font-bold mb-2">17</div>
+                    <p class="text-[9px] font-bold uppercase leading-tight">Quan hệ đối tác<br>vì mục tiêu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="esg" class="py-24 px-6 bg-slate-900 text-white overflow-hidden relative">
+        <div class="max-w-6xl mx-auto relative z-10">
+            <h2 class="text-4xl font-bold mb-16 italic uppercase tracking-tighter text-emerald-400 text-center">Trụ cột ESG</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-10 glass rounded-[40px] border-l-8 border-emerald-500 flex flex-col justify-center">
+                    <div class="text-6xl font-black text-emerald-500 mb-6 italic">E</div>
+                    <h4 class="text-xl font-bold mb-4 uppercase tracking-widest">Environment</h4>
+                    <p class="text-emerald-400 font-black text-2xl italic leading-tight uppercase">1 tấn rơm giảm 1.3% khí thải</p>
+                </div>
+                <div class="p-10 glass rounded-[40px] border-l-8 border-blue-500">
+                    <div class="text-6xl font-black text-blue-500 mb-6 italic">S</div>
+                    <h4 class="text-xl font-bold mb-4 uppercase tracking-widest text-blue-400">Social</h4>
+                    <p class="text-white/80 font-medium">+15% thu nhập thuần cho 1.400 hộ nông dân tham gia.</p>
+                </div>
+                <div class="p-10 glass rounded-[40px] border-l-8 border-purple-500">
+                    <div class="text-6xl font-black text-purple-500 mb-6 italic">G</div>
+                    <h4 class="text-xl font-bold mb-4 uppercase tracking-widest text-purple-400">Governance</h4>
+                    <p class="text-white/80 font-medium">100% định danh QR & đối soát minh bạch trên Blockchain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="py-24 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4 uppercase tracking-tighter">Đội Ngũ Sáng Tạo FIΛE</h2>
+                <p class="text-slate-500 italic text-sm uppercase tracking-widest">MIS & Chuyển đổi số - Banking University HCMC (HUB)</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
+                <div class="text-center group">
+                    <div class="w-24 h-24 bg-emerald-100 rounded-full mx-auto mb-6 flex items-center justify-center text-emerald-700 font-black text-xl border-4 border-emerald-50 group-hover:bg-emerald-500 group-hover:text-white transition duration-300">KH</div>
+                    <h4 class="font-bold text-sm text-slate-900 uppercase">Châu Khã Hân</h4>
+                    <p class="text-[10px] text-emerald-600 font-bold italic mb-2 uppercase tracking-widest">Trưởng Nhóm</p>
+                    <p class="text-[9px] text-slate-400 leading-tight italic">Chiến lược & Hệ thống.</p>
+                </div>
+                <div class="text-center group">
+                    <div class="w-24 h-24 bg-slate-100 rounded-full mx-auto mb-6 flex items-center justify-center text-slate-500 font-black text-xl border-4 border-slate-50 group-hover:bg-emerald-500 group-hover:text-white transition duration-300">TH</div>
+                    <h4 class="font-bold text-sm text-slate-900 uppercase">Thanh Hòa</h4>
+                    <p class="text-[10px] text-slate-500 font-bold italic mb-2 uppercase tracking-widest">Nghiên Cứu</p>
+                    <p class="text-[9px] text-slate-400 leading-tight italic">Tính cần thiết & Sản phẩm.</p>
+                </div>
+                <div class="text-center group">
+                    <div class="w-24 h-24 bg-slate-100 rounded-full mx-auto mb-6 flex items-center justify-center text-slate-500 font-black text-xl border-4 border-slate-50 group-hover:bg-emerald-500 group-hover:text-white transition duration-300">ML</div>
+                    <h4 class="font-bold text-sm text-slate-900 uppercase">Mỹ Lệ</h4>
+                    <p class="text-[10px] text-slate-500 font-bold italic mb-2 uppercase tracking-widest">Thị Trường</p>
+                    <p class="text-[9px] text-slate-400 leading-tight italic">Đối thủ & Khách hàng.</p>
+                </div>
+                <div class="text-center group">
+                    <div class="w-24 h-24 bg-slate-100 rounded-full mx-auto mb-6 flex items-center justify-center text-slate-500 font-black text-xl border-4 border-slate-50 group-hover:bg-emerald-500 group-hover:text-white transition duration-300">VK</div>
+                    <h4 class="font-bold text-sm text-slate-900 uppercase">Vĩnh Khang</h4>
+                    <p class="text-[10px] text-slate-500 font-bold italic mb-2 uppercase tracking-widest">Marketing</p>
+                    <p class="text-[9px] text-slate-400 leading-tight italic">Nhận diện & Chi phí.</p>
+                </div>
+                <div class="text-center group">
+                    <div class="w-24 h-24 bg-slate-100 rounded-full mx-auto mb-6 flex items-center justify-center text-slate-500 font-black text-xl border-4 border-slate-50 group-hover:bg-emerald-500 group-hover:text-white transition duration-300">HQ</div>
+                    <h4 class="font-bold text-sm text-slate-900 uppercase">Huỳnh Quyên</h4>
+                    <p class="text-[10px] text-slate-500 font-bold italic mb-2 uppercase tracking-widest">PR & Vốn</p>
+                    <p class="text-[9px] text-slate-400 leading-tight italic">Huy động vốn & PR.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 py-20 px-6 text-white text-center border-t border-white/5">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-3xl font-extrabold mb-6 italic tracking-tighter uppercase">AGRI<span class="text-emerald-400">LOOP</span></div>
+            <p class="text-white/40 mb-12 max-w-lg mx-auto font-light text-sm italic">"Biến rơm rạ từ phế phẩm thành tài sản dữ liệu, thúc đẩy kinh tế tuần hoàn cho nông nghiệp Việt Nam."</p>
+            <div class="flex justify-center gap-10 mb-12 opacity-30 grayscale hover:grayscale-0 transition duration-500">
+                 <div class="text-xs font-bold uppercase tracking-widest border border-white px-4 py-2 italic">Đại học Văn Lang</div>
+                 <div class="text-xs font-bold uppercase tracking-widest border border-white px-4 py-2 italic tracking-[0.2em]">HUB - FIΛE Team</div>
+            </div>
+            <p class="text-[9px] text-white/20 uppercase tracking-[0.5em]">&copy; 2026 AgriLoop Project | Team FIΛE (HUB)</p>
+        </div>
+    </footer>
+
+</body>
+</html>
